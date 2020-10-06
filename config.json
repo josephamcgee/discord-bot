@@ -1,0 +1,5 @@
+{
+	"BOT_TOKEN": "Your Token Here",
+	"prefix": "!",
+	"roleInfo": "```![customrole|role|cr]\r\n\r\nMods can add roles, users can apply or relieve roles. Roles created with this bot have no permissions, it only functions for fun.\r\n\r\nCommands:\r\n  apply   Apply a role\r\n  list    List all available roles\r\n  relieve Relieve a role\r\n\r\nType !role command for more info on a command. You can also type !role category for more info on a category.```"
+	}
