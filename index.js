@@ -3,6 +3,8 @@ const config = require("./config.json");
 const client = new Discord.Client();
 const roleInfo = config.roleInfo;
 
+let roleList = "Your string here";
+
 client.login(config.BOT_TOKEN);
 
 client.on('ready', () => {
@@ -55,10 +57,7 @@ client.on('message', async (msg) => {
                 member.roles.remove(role);
                 break;
             case 'list':
-                var roleList = ["Available Roles"];
-                msg.guild.roles.cache.forEach(role => roleList.push(role.name));
                 msg.channel.send(roleList);
-                //console.log(roleListArray.join("\n"));
                 break;
             default:
                 break;
