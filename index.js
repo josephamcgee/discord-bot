@@ -20,7 +20,7 @@ client.on('message', async (msg) => {
     //console.log(guild);
     const args = msg.content.slice(config.prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
-    const role = msg.guild.roles.cache.find(role => role.name.toLowerCase() === args[1]);
+    const role = msg.guild.roles.cache.find(role => role.name.toLowerCase() === args[1].toLowerCase());
     const member = msg.member;
     
     if (command == 'ping') {
